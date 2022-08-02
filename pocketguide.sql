@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 26, 2022 at 05:57 AM
+-- Generation Time: Aug 02, 2022 at 07:14 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -40,7 +40,10 @@ CREATE TABLE `tbl_announcements` (
 --
 
 INSERT INTO `tbl_announcements` (`a_id`, `date_posted`, `a_author`, `a_subject`, `a_content`) VALUES
-(1, '[value-2]', '1', 'Typhoon', 'no classes');
+(1, '[value-2]', '1', 'Typhoon', 'no classes'),
+(2, '[value-2]', '1', 'Typhoon', 'no classes'),
+(3, '[value-2]', '1', 'Typhoon', 'no classes'),
+(4, '[value-2]', '1', 'Typhoon', 'no classes');
 
 -- --------------------------------------------------------
 
@@ -62,7 +65,8 @@ CREATE TABLE `user_accounts` (
 
 INSERT INTO `user_accounts` (`uid`, `email`, `fullname`, `password`, `user_type`) VALUES
 (1, 'renzcantillan@gmail.com', 'renzcantillan', 'qwerty', '1'),
-(2, 'renz@gmail.com', 'Renz', 'renzpogi', '1');
+(2, 'renz@gmail.com', 'Renz', 'renzpogi', '1'),
+(3, 'qwe111', 'rrjjrjrj', '12345', '1');
 
 --
 -- Indexes for dumped tables
@@ -88,13 +92,13 @@ ALTER TABLE `user_accounts`
 -- AUTO_INCREMENT for table `tbl_announcements`
 --
 ALTER TABLE `tbl_announcements`
-  MODIFY `a_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `a_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `user_accounts`
 --
 ALTER TABLE `user_accounts`
-  MODIFY `uid` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `uid` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
